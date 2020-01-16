@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Olympo</title>
+	<link REL="SHORTCUT ICON" HREF="IMAGENS/ico.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width+device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+	<di class="container">
+        <!--uma coluna-->
+        <div class="row">
+            <div class="col">
+                <header>
+			  		<input type="checkbox" id="btn_menu">
+					<label for="btn_menu">&#9776;</label>
+
+					<nav class="menu">
+						<ul>
+							<li><a href="#">Entrar pela primeira vez</a></li>
+							<li><a href="#login">Entrar</a></li>
+							<li><a href="#categoria">Categorias</a></li>
+						</ul>
+					</nav>
+				</header> 
+            </div>
+        </div>
+        <!--duas culunas-->
+        <div class="row">
+        	<div class="col" id="categoria">
+        			<img src="IMAGENS/cultura.png" alt="Evento Cultural" class="imagens" title="Eventos Ligados a Cultura">
+					<img src="IMAGENS/lazer.png" alt="Evento para Lazer" class="imagens" title="Eventos para Lazer">
+					<img src="IMAGENS/conhecimento.png" alt="Eventos Voltados a Educação" class="imagens" title="Eventos Científicos">
+					<img src="IMAGENS/musica.png" alt="Eventos Musicais" class="imagens" title="Música e Shows">
+					<img src="IMAGENS/esporte.png" alt="Eventos Esportivos" class="imagens" title="Eventos Esportivos">
+					<img src="IMAGENS/gratuito.png" alt="Eventos Gratuitos" class="imagens" title="Gratuitos">
+        	</div>
+        </row>
+    	<row>
+    		<img src="IMAGENS/front.png" alt="Curta a Olympo" title="Curta Olympo" id="curtaOlympo">
+    		
+            <div class="col col-3" id="sobre">
+				<form action="#" method="POST" class="login" id="login">
+					<h1 class="centroTexto">ENTRAR</h1><br>
+					<button id="facebook">Entar com o facebook</button><br>
+					<p class="centroTexto" id="ou">OU</p>
+					<input type="text" name="login" placeholder="Nome de Usuário ou email" class="input">
+					<input type="password" name="senha" placeholder="Sua senha" class="input">
+					<button class="btn">Entrar</button><br><br>
+					<center><a id="EsqueciMinhaSenha" href="#">Esqueci minha senha</a></center>
+				</form>
+			</div>
+			<footer>
+				<div class="redes">
+					<center><a href="https://www.facebook.com/unyttos/"><img src="IMAGENS/facebook.png" alt="Nos siga no facebook" style="width: 40px; margin-top: 30px;"></a>
+					<a href="https://www.instagram.com/unyttos/?hl=pt-br"><img src="IMAGENS/instagram.png" alt="Nos siga no Instagram" style="width: 40px;"></a>
+					<p>&copy; 2019, Unyttos<p></center>
+				</div>
+			</footer>
+    </div>
+</body>
+</html>

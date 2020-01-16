@@ -1,0 +1,256 @@
+*{
+	 margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu{
+	width: 100%;
+	height: 60px;
+	display: fixed;
+}
+.menu ul{
+	list-style: none;
+	position: relative;
+}
+.menu ul li{
+	width: 20%;
+	float: left;
+}
+.menu a{
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: #ff6633;
+	height: 60px;
+}
+.menu a:hover{
+	background-color: #ff6633;
+	color: #fff;
+}
+label[for="btn_menu"]{
+	padding: 5px;
+	color: #ff6633;
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+}
+.btn{
+	background-color: #fff;
+	color: #FF4500;
+	margin-top: 30px;
+	margin-left: 20%;
+	font-weight: bold;
+	padding: 10px;
+	width: 60%;
+	font-size: 15px;
+	border-width: 1px;
+	border-color: #FF4500;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+			-o-border-radius: 5px;
+}
+.btn:hover{
+	background-color: #FF4500;
+	color: #fff;
+}
+.centroTexto{
+	text-align: center;
+}
+
+#ou{
+	margin-top: 20px;
+}
+#facebook{
+	background-color: #fff;
+	color: #00008B;
+	margin-top: 10px;
+	margin-left: 20%;
+	font-weight: bold;
+	padding: 10px;
+	width: 60%;
+	font-size: 15px;
+	border-width: 1px;
+	border-color: #00008B;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+			-o-border-radius: 5px;
+}
+#facebook:hover{
+	background-color: #00008B;
+	color: #fff;
+}
+#btn_menu{
+	display: none;
+}
+.imagens{
+	width: 100px;
+	margin-top: 40px;
+	margin-left: 8%; 
+}
+label[for="btn_menu"]{
+		display: none;
+	}
+
+@media (max-width: 800px) {
+
+	#btn_menu:checked ~ .menu{
+		margin-left: 0;
+	}
+	.menu{
+		margin-left: -100%;
+		transition: all .2s;
+	}
+	.menu ul li{
+		width: 100%;
+		float: none;
+		background-color: #fff;
+	}
+	label[for="btn_menu"]{
+		display: block;
+		width: 100%;
+		text-align: right;
+	}
+	.imagens{
+		width: 100px;
+		margin-left: 15%;
+		margin-top: 20px;
+	}
+
+}
+.login{
+	margin-top: 60px;
+	width: 100%;
+}
+.login .input{
+	padding: 10px;
+	border-style: solid;
+  	border-bottom-width: 1px;
+  	border-top-width: 0;
+  	border-right-width: 0;
+  	border-left-width: 0;
+  	border-color: #dcdcdc;
+  	width: 90%;
+  	margin-top: 10px;
+}
+#EsqueciMinhaSenha{
+	text-decoration: none;
+	color: #00008b;
+}
+
+/* conteiner */
+.container  {
+    width: 100%;
+}
+    @media (min-width: 1170px) {
+        .container {
+            max-width: 1170px;
+            padding: 0;
+        }
+
+    }
+footer{
+	background-color: #000;
+	grid-row-start: 2;
+     grid-row-end: 3;
+	color: #fff;
+}
+#curtaOlympo{
+	width: 50%;
+	margin-left: 5%;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+	@media (max-width: 900px){
+		#curtaOlympo{
+        	width: 80%;
+        	margin-left: 10%;
+        	margin-top: 50px;
+        }
+        .login{
+			margin-top: 60px;
+			width: 100%;
+			margin-bottom: 50px;
+		}
+		.imagens{
+			width: 100px;
+			margin-left: 10%;
+			margin-top: 20px;
+			margin-right: 10%;
+		}
+	}
+.redes{
+	    /* PARA FUNCIONAR EM INTERNET EXPLORER 8 E 9 */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+ 
+    /* CERTIFICAR QUE FUNCIONE EM OUTRAS VERSÕES DO INTERNET EXPLORER */
+    filter: alpha(opacity=30);
+ 
+    /* VERSÕES ANTIGA DO MOZILLA FIREFOX */
+    -moz-opacity:0.3;
+ 
+    /* SAFARI/OPERA */
+    -khtml-opacity: 0.3;
+ 
+    opacity: 0.3;
+}
+/* linha */
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+    .row:before,
+    .row:after {
+        content: "";
+        display: table;
+    }
+    .row:after {
+        clear: both;
+    }
+
+/* colunas */
+.col {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    margin-right: -4px;
+    *zoom: 1;
+    *display: inline;
+}
+
+    /* duas colonas */
+    @media (min-width: 380px) {
+        .col-2 {
+            width: 50%;
+        }
+    }
+
+    /* tres colunas */
+    @media (min-width: 900px) {
+        .col-3 {
+            width: 33.3333%;
+        }
+    }
+
+    /* sidebar */
+    @media (min-width: 992px) {
+        .col-content {
+            width: 60%;
+        }
+
+        .col-sidebar {
+           width: 40%;
+        }
+    }
