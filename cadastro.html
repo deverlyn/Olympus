@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Olympo - Cadastro</title>
+	<link REL="SHORTCUT ICON" HREF="IMAGENS/ico.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width+device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/index.css">
+	<link rel="stylesheet" href="CSS/GridLayout.css">
+	<link rel="stylesheet" href="CSS/bodyGray.css">
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body>
+	<div class="row">
+		<div class="col">
+			<form action="#" method="POST" class="login" id="cadastro">
+				<h1 class="centroTexto">Criar Conta</h1><br>
+				<button id="facebook">Cadastro com o Facebook</button>
+				<button id="gmail">Cadstro com o Gmail</button><br><br>
+				<center>
+				<input type="text" name="Nome" placeholder="Seu nome" class="input">
+				<input type="email" name="email" placeholder="Exemple@gmail.com" class="input">
+				<input type="password" name="senha" placeholder="sua senha" class="input"></center>
+				<button class="btn">Cadastrar</button>
+				<center>
+				<div id="espaco" class="g-recaptcha" data-sitekey="6LcrJdAUAAAAAK3151Fk_A17WlvKhkJvFFsTKkiy"></div>
+				<p class="espaco">Ao se cadastrar, você concorda com todos os <a href="#" class="links"> Termos e Políticas de Uso</a> da Olympo </p>
+				</center>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
